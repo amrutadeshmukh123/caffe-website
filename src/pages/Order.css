@@ -78,6 +78,7 @@
 .your-order .container3 .btn button:nth-child(2){
     background: red;
     color: white;
+    padding: 4px 35px;
     border: 2px solid red;
     font-size: 17px;
 }
@@ -141,4 +142,126 @@
     margin-top: 10px;
     margin-left: 50px;
     font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .order {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+
+    .order .your-order, 
+    .order .feedback {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .order .your-order .container3, 
+    .order .feedback .container4 {
+        width: 100%;
+    }
+
+    .your-order .container3 .input-field input {
+        width: 100%;
+    }
+
+    .your-order .container3 .btn {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .your-order .container3 .btn button {
+        width: 100%;
+        padding: 8px 20px;
+    }
+
+    .order .feedback .container4 {
+        height: auto;
+        padding: 20px;
+    }
+
+    .order .feedback .container4 .box {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .order .feedback .container4 .box input {
+        width: 80%;
+    }
+
+    .order .feedback .container4 .box button {
+        width: 20%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .order {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .order .your-order, 
+    .order .feedback {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .order .your-order h2, 
+    .order .feedback h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .order .your-order .container3, 
+    .order .feedback .container4 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .your-order .container3 .input-field {
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .your-order .container3 .input-field input {
+        width: 90%;
+    }
+
+    .your-order .container3 .btn {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .your-order .container3 .btn button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .order .feedback .container4 {
+        height: auto;
+        padding: 20px;
+    }
+
+    .order .feedback .container4 .box {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .order .feedback .container4 .box input {
+        width: 75%;
+    }
+
+    .order .feedback .container4 .box button {
+        width: 25%;
+    }
 }

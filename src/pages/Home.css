@@ -45,3 +45,62 @@
     color: black;
     border: 2px solid white;
 }
+
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        height: 500px;
+        background-size: cover;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .container .content {
+        width: 70%;
+        margin-left: 30px;
+    }
+
+    .container .content h2 {
+        font-size: 30px;
+    }
+
+    .container .content p {
+        font-size: 16px;
+    }
+
+    .container .content button {
+        font-size: 15px;
+        padding: 10px 18px;
+    }
+}
+
+/* For Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        height: 400px;
+        padding: 40px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container .content {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .container .content h2 {
+        font-size: 26px;
+        padding: 10px 0;
+    }
+
+    .container .content p {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .container .content button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
